@@ -1,217 +1,241 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      h2 {
-        text-align: center;
-        color: #00bfff;
-      }
-      body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        line-height: 1.42857143;
-        color: #333;
-        background-color: #fff;
-      }
-      div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 180px;
-      }
-
-      div.gallery:hover {
-        border: 1px solid #777;
-      }
-
-      div.gallery img {
-        width: 100%;
-        height: auto;
-      }
-
-      div.desc {
-        padding: 15px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <h2>OSAC members Gallery</h2>
-
-    <!-- Example Template STARTS
-
-    <div class="gallery">
-      <a target="_blank" href="{folder-name}">
-        <img src="https://github.com/{username}.png" alt="Github Avatar" width="600" height="400" />
-      </a>
-      <div class="desc">{Your Full Name}</div>
-    </div>
-
-    Example Template ENDS -->
-
-    <div class="gallery">
-      <a target="_blank" href="https://github.com/osac">
-        <img
-          src="https://github.com/osac.png"
-          alt="Osac github avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">OSAC</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="hemanta-sharma">
-        <img
-          src="https://github.com/hemanta212.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Hemanta Sharma</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="abinash-babu-tiwari">
-        <img
-          src="https://github.com/itz-abinash.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Abinash Babu Tiwari</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="sujan-kadariya">
-        <img
-          src="https://github.com/sujankadariya.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Sujan Kadariya</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="pujan-bhattarai">
-        <img
-          src="https://github.com/PujanB10.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Pujan Bhattarai</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="rishi-prasad-aryal">
-        <img
-          src="https://github.com/rishi064.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Rishi Prasad Aryal</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="oshan-shrestha">
-        <img
-          src="https://github.com/oshan-stha.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Oshan Shrestha</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="https://samiplamsal.com.np/">
-        <img
-          src="https://github.com/lamsalsamip1.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Samip Lamsal</div>
-    </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSAC PROFILES</title>
+  <link rel="icon" type="logo/png" href="logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.897);
+      letter-spacing: 1px;
+    }
     
-    <div class="gallery">
-      <a target="_blank" href="Risav-Pyakurel">
-        <img
-          src="https://github.com/risav-pyakurel.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Risav-Pyakurel</div>
-    </div>
-    
-    
-    
-    <div class="gallery">
-      <a target="_blank" href="Anupama-Rai">
-        <img
-          src="https://github.com/Anupamaraie.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Anupama Rai</div>
-    </div>
-  </body>
+    h2 {
+      text-align: center;
+      position: relative;
+      color: #85f5fd;
+      text-transform: uppercase;
+    }
+
+    h2::after{
+      position: absolute;
+      content: "";
+      width: 20%;
+      height: 2px;
+      bottom: 2px;
+      left: 40%;
+      background-color: #000;
+    }
+
+    div.gallery {
+      margin: 10px;
+      float: left;
+      width: 200px;
+      transition: .5s;
+      overflow: hidden;
+    }
+
+    div.gallery:hover {
+      border-radius: 5px;
+      transform: scale(1.02);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    img {
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%;
+      height: 100%;
+      height: auto;
+      
+    }
+
+    div.desc {
+      background-color: #fdd9859c;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 15px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>OSAC members Gallery</h2>
+
+  <!-- Example Template STARTS
+
+  <div class="gallery">
+    <a target="_blank" href="{folder-name}">
+      <img src="https://github.com/{username}.png" alt="Github Avatar" width="600" height="400" />
+    </a>
+    <div class="desc">{Your Full Name}</div>
+  </div>
+
+  Example Template ENDS -->
+
+  <div class="gallery">
+    <a target="_blank" href="https://github.com/osac">
+      <img
+        src="https://github.com/osac.png"
+        alt="Osac github avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">OSAC</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="hemanta-sharma">
+      <img
+        src="https://github.com/hemanta212.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Hemanta Sharma</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="abinash-babu-tiwari">
+      <img
+        src="https://github.com/itz-abinash.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Abinash Babu Tiwari</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="sujan-kadariya">
+      <img
+        src="https://github.com/sujankadariya.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Sujan Kadariya</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="pujan-bhattarai">
+      <img
+        src="https://github.com/PujanB10.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Pujan Bhattarai</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="rishi-prasad-aryal">
+      <img
+        src="https://github.com/rishi064.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Rishi Prasad Aryal</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="oshan-shrestha">
+      <img
+        src="https://github.com/oshan-stha.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Oshan Shrestha</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="https://samiplamsal.com.np/">
+      <img
+        src="https://github.com/lamsalsamip1.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Samip Lamsal</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="Anupama-Rai">
+      <img
+        src="https://github.com/Anupamaraie.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Anupama Rai</div>
+  </div>
+</body>
 </html>
 
- 
-
-    <div class="gallery">
-      <a target="_blank" href="bibisha-baniya">
-        <img
-          src="https://github.com/bbsabaniya.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Bibisha Baniya</div>
-    </div>
-  </body>
+  <div class="gallery">
+    <a target="_blank" href="bibisha-baniya">
+      <img
+        src="https://github.com/bbsabaniya.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Bibisha Baniya</div>
+  </div>
+</body>
 </html>
 <div class="gallery">
-      <a target="_blank" href="Samir-Koirala">
-        <img
-          src="https://github.com/samirkoirala.png"
-          alt="Github Avatar"
-          width="600"
-          height="400"
-        />
-      </a>
-      <div class="desc">Samir Koirala</div>
-    </div>
-  </body>
+    <a target="_blank" href="Samir-Koirala">
+      <img
+        src="https://github.com/samirkoirala.png"
+        alt="Github Avatar"
+        width="600"
+        height="400"
+      />
+    </a>
+    <div class="desc">Samir Koirala</div>
+  </div>
+</body>
 </html>
 
 <div class="gallery">
-  <a target="_blank" href="Suyog-Shrestha">
-    <img
-      src="https://github.com/SuySth97.png"
-      alt="Github Avatar"
-      width="600"
-      height="400"
-    />
-  </a>
-  <div class="desc">Suyog Shrestha</div>
+<a target="_blank" href="Suyog-Shrestha">
+  <img
+    src="https://github.com/SuySth97.png"
+    alt="Github Avatar"
+    width="600"
+    height="400"
+  />
+</a>
+<div class="desc">Suyog Shrestha</div>
 </div>
+</body>
+</html>
+
 </body>
 </html>
